@@ -1,30 +1,73 @@
- # Instruksia po yaziku Markdown
- 
-## Stilizatsiya tekst
-Obicniy tekst nabirayem kak yest.
+# Подзказка по GIT
+* Инициировать файл. Начинает следить за изменениями в данном файле.
 
-Novaya stroka.
+```sh
+git init
 
-**Polujirniy**
+```
 
-*Kursiv*
+* Эта команда показывает изменении и предупреждает если они не сохранены.
+```sh
+git status
+```
 
-## Sitirovanie v yazike Markdown
-> Perviy uroven sitirovanie
->> Vtoroy uroven
+* Добавляет и сохраняет изменений.
+ ```ah
+ git add
+ ```
 
-## Spiski
-### Nenumerovanniy spisok
-* List 
-* List 2
+* Позволяет добавить комментарий.
+ ```sh
+ git commit -m "Message_text"
+ ```
 
-### Numerovanniy spisok
-1. List
-2. List
+* Это коианда позволяет видеть историю коммитов, изменении и кто внёс изминение.
+ ```sh
+ git log
+ ```
 
-## Web silki
-Text [primer link](html.example.com "vslipayuwaya podskazka")
+* Используется для вывода каждого коммита в одной строке.
+ ```sh
+ git log --oneline
+ ```
 
-# Добавим как добавлять картинки в Markdown
-Это яблоко
-![Яблоко](red_apple.jpg)
+* Позволяет переключиться между версиями и вернуться на каждую. 
+```sh
+git checkout <Имя_ветки>
+```
+
+* Отображение всех веток
+```sh
+git branch
+```
+* Создание новой ветки
+```sh
+git branch <имя_ветки>
+```
+
+* Используется для удаление ветки
+```sh
+git branch -d <имя_ветки>
+
+```
+
+* Используется для вывода каждого коммита по схему
+```sh
+git log --oneline --graph
+
+```
+
+* Это команда помогает объединить ветки
+```sh
+git merge
+```
+
+* Это команды используется для получение последние обновления из уданенного репозитория и объединить их с вашей текушей ветной
+```sh
+git pull
+```
+
+* Эта команда отправляет все локальные изменения в соответствующую ветку удаленного репозитория
+```sh
+git push
+```
